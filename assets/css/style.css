@@ -140,14 +140,19 @@ body {
     position: relative;
     float: left;
     width: 258px;
-    margin: 20px;
     overflow: auto;
+    margin: 10px 0;
+
   }
-  /*
+
   .work:nth-child(even) {
     margin-right: 40px;
   }
-  */
+
+  .work:nth-child(odd) {
+    margin-right: 40px;
+  }
+
   .work img {
     width: 100%;
     border: 0 none;
@@ -216,23 +221,52 @@ body {
     border: 0 none;
   }
   
-
   /*media queries*/
 
   @media screen and (max-width:980px) {
-    .main-section {
-        width: 100%;
-        max-width: 700px;
+      .main-section{
+          width: 75%;
       }
-  
 
-  @media screen and (max-width: 768px) {
-  
-  }
-  
-  @media screen and (max-width: 640px) {
-    header {
-        position: static;
+      nav {
+        margin-right: 20px;
     }
- 
   }
+
+  @media screen and (max-width:768px) {
+       .main-section {
+          width: 100%;
+        }
+
+        nav {
+            margin-right: 20px;
+        }
+    }
+
+
+  @media only screen and (max-width:640px) {
+        header {
+          position: static;
+        }
+
+        .main-section {
+          width: 100%;
+          margin-top: 40px
+        }
+
+        #logo {
+            float: none;
+            display:inline-block;
+            width: 100%;
+            text-align: center;
+        }
+
+        nav{
+          float: none;
+          width: 100%;
+          display: inline-block;
+          margin: 15px auto;
+          text-align: center;
+        }
+
+    }
